@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        fieldset {
+            border: 2px solid #000;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <h1>My Contact Details</h1>
+    <hr>
+    <p>Email: <a href="mailto:devbydijah@gmail.com">devbydijah@gmail.com</a></p>
+    <p>Phone: +234 907 387 0000</p>
+    <p>Abuja, Nigeria</p>   
+    <hr>
+    <h2>Your Information</h2>
+    <fieldset>
+        <legend>Contact Form</legend>
+        <form action="contact.php" method="post">
+            <label for="first-name">First Name:</label><br>
+            <input type="text" id="first-name" name="first-name" required><br>
+
+            <label for="last-name">Last Name:</label><br>
+            <input type="text" id="last-name" name="last-name" required><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    Male
+                </label><br>
+                <label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    Female
+                </label><br>
+                <label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    Other
+                </label>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Do you want to subscribe?</legend>
+                <label>
+                    <input type="radio" id="yes" name="subscribe" value="yes">
+                    Yes
+                </label><br>
+                <label>
+                    <input type="radio" id="no" name="subscribe" value="no">
+                    No
+                </label>
+            </fieldset><br>
+
+            <label for="car">Favorite Car:</label>
+            <select id="car" name="car">
+                <option value="toyota">Toyota</option>
+                <option value="ford">Ford</option>
+                <option value="honda">Honda</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="volkswagen">Volkswagen</option>
+                <option value="peugeot">Peugeot</option>
+                <option value="hyundai">Hyundai</option>
+                <option value="kia">Kia</option>
+                <option value="nissan">Nissan</option>
+            </select><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+</body>
+</html>
